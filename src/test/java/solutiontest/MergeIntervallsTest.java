@@ -47,13 +47,37 @@ public class MergeIntervallsTest {
 		int[] interval4 = { 13, 27 };
 		int[][] intervals = { interval1, interval2, interval3, interval4 };
 		int[] interval5 = { 1, 7 };
-		int[] interval6 = { 8, 11 };
-		int[] interval7 = { 13, 27 };
-		int[][] mergedIntervals = { interval5, interval6, interval7 };
+		int[][] mergedIntervals = { interval5, interval3, interval4 };
+		int[][] result = mergeIntervalsSolution.merge(intervals);
+		assertArrayEquals(mergedIntervals, result);
+
+	}
+
+	@Test
+	public void assertCorrectResultForFurtherIntervallsZeroValue() {
+		int[] interval1 = { 0, 4 };
+		int[] interval2 = { 2, 7 };
+		int[] interval3 = { 7, 11 };
+		int[] interval4 = { 13, 27 };
+		int[][] intervals = { interval1, interval2, interval3, interval4 };
+		int[] interval5 = { 0, 11 };	
+		int[][] mergedIntervals = { interval5, interval4 };
 		int[][] result = mergeIntervalsSolution.merge(intervals);
 		assertArrayEquals(mergedIntervals, result);
 
 	}
 	
+	@Test
+	public void assertCorrectResultForFurtherIntervallsNoOverlap() {
+		int[] interval1 = { 0, 4 };
+		int[] interval2 = { 5, 7 };
+		int[] interval3 = { 9, 11 };
+		int[] interval4 = { 13, 27 };
+		int[][] intervals = { interval1, interval2, interval3, interval4 };
+		int[][] mergedIntervals = { interval1, interval2, interval3, interval4 };
+		int[][] result = mergeIntervalsSolution.merge(intervals);
+		assertArrayEquals(mergedIntervals, result);
+
+	}
 
 }
