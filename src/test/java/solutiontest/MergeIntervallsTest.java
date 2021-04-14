@@ -55,14 +55,5 @@ public class MergeIntervallsTest {
 
 	}
 	
-	@Test 
-	public void assertCorrectlyCleanedArray() {
-		int[] interval1 = { 1, 4 };
-		int[] interval3 = { 2, 7 };
-		int[][] intervals = {interval1, null, interval3};
-		int[][] cleaned = {interval1, interval3};
-		int[][] result = mergeIntervalsSolution.cleanArray(intervals, 2);
-		assertArrayEquals(cleaned, result);
-	}
 
 }
