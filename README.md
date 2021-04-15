@@ -15,4 +15,4 @@ Die Robustheit des Codes bei großen Eingabemengen kann durch eine möglichst ef
 # Implementierung
 Die Lösung ist in Java implementiert und kann mittels Maven gebaut werden. Die Klasse MergeIntervalsSolution enthält die Methode merge, welche ein 2D Integer Array entgegennimmt und ein zusammengefügtes 2D Integer Array zurückgibt. In der Main Methode wird die Funktion auf das in der Aufgabenstellung genannte Beispiel angewandt und das Ergebnis ausgegeben. Zudem sind in der Klasse MergeIntervallsTest mehrere Unit Tests definiert. Ein mittels Maven erzeugtes .jar file befindet sich in /target. 
 
-# Die Bearbeitungszeit betrug ca. einen Tag.
+Die Bearbeitungszeit betrug ca. einen Tag.
