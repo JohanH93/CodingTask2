@@ -42,7 +42,7 @@ public class MergeIntervalsSolution {
 		int[][] intervalls = { array1, array2, array3, array4 };
 		MergeIntervalsSolution mergeIntervalls = new MergeIntervalsSolution();
 
-		// Example test run printing result to console
+		// Example Test run printing result to console
 		System.out.println("Before merge:");
 		System.out.println(Arrays.deepToString(intervalls));
 		System.out.println("After merge:");
