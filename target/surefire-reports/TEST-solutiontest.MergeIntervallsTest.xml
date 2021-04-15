@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="solutiontest.MergeIntervallsTest" time="0.101" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="solutiontest.MergeIntervallsTest" time="0.131" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Johannes\AppData\Local\Temp\surefire9213010264667723158\surefirebooter8058792587148984421.jar C:\Users\Johannes\AppData\Local\Temp\surefire9213010264667723158 2021-04-15T10-37-42_631-jvmRun1 surefire14940747597332151223tmp surefire_04818218581904969359tmp"/>
+    <property name="sun.java.command" value="C:\Users\Johannes\AppData\Local\Temp\surefire6700781960045795598\surefirebooter5012144428986458322.jar C:\Users\Johannes\AppData\Local\Temp\surefire6700781960045795598 2021-04-15T11-25-50_078-jvmRun1 surefire5190340239169597729tmp surefire_017267420460409793594tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Johannes\git\CodingTask2\target\test-classes;C:\Users\Johannes\git\CodingTask2\target\classes;C:\Users\Johannes\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Johannes\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Johannes\AppData\Local\Temp\surefire9213010264667723158\surefirebooter8058792587148984421.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Johannes\AppData\Local\Temp\surefire6700781960045795598\surefirebooter5012144428986458322.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14.0.2+12-46"/>
@@ -55,10 +55,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="assertEmptyArrayIsReturnedIfEmptyArrayIsProvided" classname="solutiontest.MergeIntervallsTest" time="0.012"/>
-  <testcase name="assertCorrectResultForFurtherIntervallsNoOverlap" classname="solutiontest.MergeIntervallsTest" time="0"/>
+  <testcase name="assertEmptyArrayIsReturnedIfEmptyArrayIsProvided" classname="solutiontest.MergeIntervallsTest" time="0.016"/>
+  <testcase name="assertCorrectResultForFurtherIntervallsNoOverlap" classname="solutiontest.MergeIntervallsTest" time="0.001"/>
   <testcase name="assertCorrectResultForFurtherIntervallsZeroValue" classname="solutiontest.MergeIntervallsTest" time="0"/>
-  <testcase name="assertCorrectResultForFurtherIntervalls" classname="solutiontest.MergeIntervallsTest" time="0.003"/>
-  <testcase name="assertCorrectResultForGivenExample" classname="solutiontest.MergeIntervallsTest" time="0"/>
-  <testcase name="assertCorrectResultForFurtherIntervallsNegativeValues" classname="solutiontest.MergeIntervallsTest" time="0.002"/>
+  <testcase name="assertCorrectResultForFurtherIntervalls" classname="solutiontest.MergeIntervallsTest" time="0"/>
+  <testcase name="assertCorrectResultForFurtherIntervallsNullValues" classname="solutiontest.MergeIntervallsTest" time="0.001"/>
+  <testcase name="assertCorrectResultForGivenExample" classname="solutiontest.MergeIntervallsTest" time="0.001"/>
+  <testcase name="assertCorrectResultForFurtherIntervallsNegativeValues" classname="solutiontest.MergeIntervallsTest" time="0"/>
 </testsuite>

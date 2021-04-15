@@ -6,12 +6,16 @@ import java.util.LinkedList;
 
 public class MergeIntervalsSolution {
 	public int[][] merge(int[][] intervallArray) {
-		// Sort intervals by their lower limit
-		Arrays.sort(intervallArray, Comparator.comparingInt(interval -> interval[0]));
+		// Sort intervals by their lower limit, potential null intervals are sorted last
+		Arrays.sort(intervallArray, Comparator.nullsLast(Comparator.comparingInt(interval -> interval[0])));
 		// New LinkedList for the merged intervals
 		LinkedList<int[]> mergedIntervals = new LinkedList<>();
 		// Iterate over intervals in original array
 		for (int[] currentInterval : intervallArray) {
+			// if the potential area with null values is reached the iteration is ended
+			if (currentInterval == null) {
+				break;
+			}
 			// If no array is in the merged list or the current array does not overlap with
 			// the previous one it is added to the merged list
 			if (mergedIntervals.isEmpty() || (currentInterval[0] > mergedIntervals.getLast()[1])) {
